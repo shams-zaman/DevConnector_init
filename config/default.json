@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://alamin:alamin@cluster0.xd7xn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "caea907436cba8ed9f66",
+  "githubSecret": "3d23f57cd618af508a61a35229dd6c22c13faf01"
+}
