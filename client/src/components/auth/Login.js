@@ -10,7 +10,6 @@ function Login({ login }) {
     email: "",
     password: "",
   });
-  //              D-Sturcturing [formData.name]
   const { email, password } = formData;
 
   const onChange = (e) =>
@@ -19,14 +18,9 @@ function Login({ login }) {
       [e.target.name]: e.target.value,
     });
 
-  //
-  //           Submit
-
   const onSubmit = async (e) => {
     e.preventDefault();
-
-    //            Submit...
-    login(email, password);
+    login({ email, password });
   };
   //  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 
@@ -71,13 +65,6 @@ Login.prototype = {
 };
 
 export default connect(null, { login })(Login);
-// export default Login;
-
-//
-
-//
-
-//
 
 //
 
